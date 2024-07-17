@@ -1,0 +1,250 @@
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+:root {
+  --PrimaryColor: hsla(26, 93%, 50%);
+  --HoverColor: hsla(26, 90%, 42%);
+  --whiteColor: hsla(0, 0%, 100%);
+  --blackColor: hsla(0, 0%, 18%);
+  --textColor: hsla(240, 1%, 48%);
+  --whiteColorDeam: hsla(0, 0%, 93%);
+  --greyBg: hsla(0, 0%, 96%);
+  --inputColor: hsla(330, 12%, 97%);
+  --greyText: rgb(190, 190, 190);
+  --SecondaryColor: hsl(204, 33%, 97%);
+  --MainColor: hsl(20, 4%, 13%);
+  --ThirdColor: hsl(214, 10%, 34%);
+  --OnHoverColor: hsl(210, 10%, 14%);
+  --ButtonHover: hsl(210, 17%, 98%);
+  --GoldColor: hsl(38, 36%, 51%);
+  --MoreGoldColor: hsl(38, 59%, 48%);
+}
+
+.learn .secContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.learn .secContainer .learnMainContent {
+  padding-top: 5rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.learn .secContainer .learnMainContent .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.learn .secContainer .learnMainContent .title .subtitle {
+  color: var(--GoldColor);
+  padding-left: 1rem;
+}
+.learn .secContainer .learnMainContent .learnContent {
+  background: var(--MainColor);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.learn .secContainer .learnMainContent .learnContent .singleItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.learn .secContainer .learnMainContent .learnContent .singleItem img {
+  border-radius: 1rem;
+  border: 1px solid var(--whiteColor);
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+.learn .secContainer .learnMainContent .learnContent .singleItem img:hover {
+  transform: scale(1.05);
+  transition: 3s ease;
+}
+.learn .secContainer .learnMainContent .learnContent .singleItem h1 {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  color: var(--GoldColor);
+}
+.learn .secContainer .learnMainContent .learnContent .singleItem p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: var(--whiteColor);
+}
+.learn .secContainer .learnMainContent .softwareContent {
+  background: var(--greyBg);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.learn .secContainer .learnMainContent .softwareContent .singleItem {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.learn .secContainer .learnMainContent .softwareContent .singleItem img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100px;
+  width: 110px;
+  max-width: 400px;
+  overflow: hidden;
+}
+.learn .secContainer .learnMainContent .softwareContent .singleItem img:hover {
+  transform: scale(1.05);
+  transition: 3s ease;
+}
+.learn .secContainer .learnMainContent .softwareContent .singleItem h1 {
+  text-align: center;
+  display: grid;
+  font-size: 25px;
+  font-weight: 550;
+  padding-bottom: 0.8rem;
+  color: var(--blackColor);
+}
+.learn .secContainer .learnMainContent .softwareContent .singleItem h1:hover {
+  font-size: 26px;
+}
+.learn .secContainer .learnMainContent .hardwareContent {
+  background: var(--greyBg);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.learn .secContainer .learnMainContent .hardwareContent .singleItem {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.learn .secContainer .learnMainContent .hardwareContent .singleItem img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100px;
+  width: 110px;
+  max-width: 400px;
+  overflow: hidden;
+}
+.learn .secContainer .learnMainContent .hardwareContent .singleItem img:hover {
+  transform: scale(1.05);
+  transition: 3s ease;
+}
+.learn .secContainer .learnMainContent .hardwareContent .singleItem h1 {
+  text-align: center;
+  display: grid;
+  font-size: 25px;
+  font-weight: 550;
+  padding-bottom: 0.8rem;
+  color: var(--blackColor);
+}
+.learn .secContainer .learnMainContent .hardwareContent .singleItem h1:hover {
+  font-size: 26px;
+}
+.learn .secContainer .learnMainContent .certMainContent {
+  background: var(--MainColor);
+  border-radius: 20px;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.learn .secContainer .learnMainContent .certMainContent .certh1 {
+  text-align: center;
+  display: grid;
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--GoldColor);
+}
+.learn .secContainer .learnMainContent .certMainContent .certh3 {
+  padding-top: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--whiteColor);
+}
+.learn .secContainer .learnMainContent .certMainContent .certp {
+  padding-top: 0.5rem;
+  text-align: center;
+  color: var(--textColor);
+}
+.learn .secContainer .learnMainContent .certMainContent .certp .link {
+  color: var(--GoldColor);
+  cursor: pointer;
+}
+.learn .secContainer .learnMainContent .certMainContent .certContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.learn .secContainer .learnMainContent .certMainContent .certContent .singleItem {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.learn .secContainer .learnMainContent .certMainContent .certContent .singleItem img {
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  max-width: 400px;
+  overflow: hidden;
+}
+.learn .secContainer .learnMainContent .certMainContent .certContent .singleItem img:hover {
+  transform: scale(1.1);
+  transition: 3s ease;
+}
+.learn .secContainer .learnMainContent .certMainContent .certContent .singleItem h1 {
+  text-align: center;
+  display: grid;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 0.8rem;
+  color: var(--whiteColor);
+}
+.learn .secContainer .learnMainContent .certMainContent .certContent .singleItem h1:hover {
+  font-size: 21px;
+}/*# sourceMappingURL=learn.module.css.map */

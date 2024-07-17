@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+:root {
+    --PrimaryColor: hsla(26, 93%, 50%);
+    --HoverColor: hsla(26, 90%, 42%);
+    --whiteColor: hsla(0, 0%, 100%);
+    --blackColor: hsla(0, 0%, 18%);
+    --textColor: hsla(240, 1%, 48%);
+    --whiteColorDeam: hsla(0, 0%, 93%);
+    --greyBg: hsla(0, 0%, 96%);
+    --inputColor: hsla(330, 12%, 97%);
+    --greyText: rgb(190, 190, 190);
+
+    --SecondaryColor: hsl(204, 33%, 97%);
+    --MainColor: hsl(20, 4%, 13%);
+    --ThirdColor: hsl(214, 10%, 34%);
+    --OnHoverColor: hsl(210, 10%, 14%);
+    --ButtonHover: hsl(210, 17%, 98%);
+    --GoldColor: hsl(38, 36%, 51%);
+    --MoreGoldColor: hsl(38, 59%, 48%);
+}
+
+.home {
+    
+    height: 96vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+    .carousel {    
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.823), rgba(0, 0, 0, 0.664));
+                z-index: 1; // Ensure it is above the images but below text/buttons
+            }
+
+        .carouselImage {
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .carouselIndicator {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        overflow: hidden;
+
+        .progressBar {
+            height: 100%;
+            background-color: var(--whiteColor);
+            transition: width 0.3s;
+        }
+    }
+
+    .secContainer {
+        z-index: 1;
+
+        .homeText {
+            text-align: center;           
+            padding: 1rem;
+            border-radius: 10px;
+            
+
+            .title {
+                display: flex;
+                text-align: center; 
+                color: var(--MoreGoldColor);
+                font-size: 3.5rem;
+                font-weight: 700;
+                line-height: 3rem;
+                justify-content: center;
+                align-items: center;
+
+                .titlespan {
+                    color: var(--whiteColor);
+                    font-size: 3.5rem;
+                    font-weight: 400;
+                    line-height: 2.5rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .subTitle {
+                color: var(--whiteColor);
+                opacity: .9;
+                font-size: 17px;
+                font-weight: 400;
+                padding: 1rem 0;
+                max-width: 70%;
+                text-align: center;
+                margin: auto;
+                line-height: 1.7rem;
+            }
+
+            .btn {
+                   
+                margin: 1rem;
+                padding: 2rem 3rem 3rem 3rem ;
+                background-color: transparent;
+                border: 2px solid var(--whiteColor);
+                color: var(--whiteColor);
+                cursor: pointer;
+                border-radius: 3rem;
+                width: auto;
+                
+
+
+                &:hover {
+                    background-color: var(--whiteColor);
+                    color: var(--GoldColor);
+                }
+
+                a {
+                    text-align: cennter;
+                    display: flex;
+                    font-weight: 500;
+                    color: inherit;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+
+                    &:hover {
+                        color: var(--textColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .home {
+        height: 110vh;
+
+        .secContainer {
+            margin-top: 0px;
+
+            .homeText {
+                .title {
+                    font-size: 2.5rem;
+
+                    .titlespan {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .subTitle {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

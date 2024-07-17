@@ -1,0 +1,321 @@
+/* Colors */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+:root {
+    --PrimaryColor: hsla(26, 93%, 50%);
+    --HoverColor: hsla(26, 90%, 42%);
+    --whiteColor: hsla(0, 0%, 100%);
+    --blackColor: hsla(0, 0%, 18%);
+    --textColor: hsla(240, 1%, 48%);
+    --whiteColorDeam: hsla(0, 0%, 93%);
+    --greyBg: hsla(0, 0%, 96%);
+    --inputColor: hsla(330, 12%, 97%);
+    --greyText: rgb(190, 190, 190);
+    //box-shadow: 0, 2px 8px 2px rgba(178, 178, 178, 0.45);
+
+    --SecondaryColor: hsl(204, 33%, 97%); //Primary
+    --MainColor: hsl(20, 4%, 13%); //section
+    --ThirdColor: hsl(214, 10%, 34%); //color in logo
+    --OnHoverColor: hsl(210, 10%, 14%); //Hover
+    --ButtonHover: hsl(210, 17%, 98%); //Button on HOme
+    --GoldColor: hsl(38, 36%, 51%);
+    --MoreGoldColor: hsl(38, 59%, 48%);
+
+}
+
+.learn{
+
+    .secContainer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .learnMainContent{
+            padding-top: 5rem;
+            margin: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                    
+                    color: var(--blackColor);
+                    line-height: 1.5rem;
+                    padding-bottom: .8rem;
+                    text-align: center;
+                    font-size: 45px;
+                    font-weight: 600;
+                    margin-bottom: 2rem;
+            
+                    .subtitle {
+                        color: var(--GoldColor);
+                        padding-left: 1rem;
+                    }
+                }
+
+            .learnContent{
+
+                background: var(--MainColor);
+                border-radius: 15px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto auto;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3rem;
+
+                .singleItem{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 1.5rem;
+                    margin-bottom: .5rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                
+                    img {
+                        border-radius: 1rem;
+                        border: 1px solid var(--whiteColor);
+                        height: 300px;
+                        width: 100%;
+                        max-width: 400px; // Adjust width as needed
+                        overflow: hidden;
+                
+                        &:hover {
+                            transform: scale(1.05);
+                            transition: 3s ease;
+                        }
+                
+                    }
+                
+                    h1 {
+
+                        font-size: 35px;
+                        font-weight: 500;
+                        padding-bottom: .8rem;
+                        color: var(--GoldColor);
+                    }
+                
+                    p {
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding-bottom: 1rem;
+                        color: var(--whiteColor);
+                    }
+
+                }
+
+            }
+
+
+
+                .softwareContent {
+        
+                    background: var(--greyBg);
+                    border-radius: 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: auto auto;
+                    gap: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 3rem;
+        
+                    .singleItem {
+                        text-align: center;
+                        margin-top: 1.5rem;
+                        margin-bottom: .5rem;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+        
+                        img {
+                            
+                            object-fit: contain;
+                            height: 100px;
+                            width: 110px;
+                            max-width: 400px; // Adjust width as needed
+                            overflow: hidden;
+        
+                            &:hover {
+                                transform: scale(1.05);
+                                transition: 3s ease;
+                            }
+        
+                        }
+        
+                        h1 {
+                            text-align: center;
+                            display: grid;
+                            font-size: 25px;
+                            font-weight: 550;
+                            padding-bottom: .8rem;
+                            color: var(--blackColor);
+
+                            &:hover{
+                                font-size: 26px;
+                            }
+                        }
+        
+                    }
+        
+                }
+
+
+
+                 .hardwareContent {
+        
+                     background: var(--greyBg);
+                     border-radius: 20px;
+                     display: grid;
+                     grid-template-columns: 1fr 1fr 1fr 1fr;
+                     grid-template-rows: auto auto;
+                     gap: 1rem;
+                     justify-content: center;
+                     align-items: center;
+                     margin-bottom: 3rem;
+        
+                     .singleItem {
+                         text-align: center;
+                         margin-top: 1.5rem;
+                         margin-bottom: .5rem;
+                         margin-left: 1rem;
+                         margin-right: 1rem;
+        
+                         img {
+        
+                            object-fit: contain;
+                             height: 100px;
+                             width: 110px;
+                             max-width: 400px; // Adjust width as needed
+                             overflow: hidden;
+        
+                             &:hover {
+                                 transform: scale(1.05);
+                                 transition: 3s ease;
+                             }
+        
+                         }
+        
+                         h1 {
+                            text-align: center;
+                            display: grid;
+                             font-size: 25px;
+                             font-weight: 550;
+                             padding-bottom: .8rem;
+                             color: var(--blackColor);
+        
+                             &:hover {
+                                 font-size: 26px;
+                             }
+                         }
+        
+                     }
+        
+                 }
+
+
+                 .certMainContent{
+                    background: var(--MainColor);
+                    border-radius: 20px;
+                    padding-bottom: 2rem;
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+
+                    .certh1{
+                        text-align: center;
+                        display: grid;
+                        padding-top: 2rem;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 30px;
+                        color: var(--GoldColor);
+                    }
+                    .certh3 {
+            
+                        padding-top: .5rem;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 25px;
+                        color: var(--whiteColor);
+                    }
+                                                                                
+                    .certp{
+                        padding-top: .5rem;
+                        text-align: center;
+                        color: var(--textColor);
+
+                        .link{
+                            color: var(--GoldColor);
+                            cursor: pointer;        
+                        }
+                    }
+
+
+                    .certContent{
+
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto auto;
+                    gap: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                
+                    .singleItem {   
+                        text-align: center;
+                        margin-top: 1.5rem;
+                        margin-bottom: .5rem;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                
+                        img {
+                            cursor: pointer;   
+                            height: 150px;
+                            width: 150px;
+                            max-width: 400px; // Adjust width as needed
+                            overflow: hidden;
+                
+                            &:hover {
+                                transform: scale(1.1);
+                                transition: 3s ease;
+                            }
+                
+                        }
+                
+                        h1 {
+                            text-align: center;
+                            display: grid;
+                            font-size: 20px;
+                            font-weight: 300;
+                            padding-bottom: .8rem;
+                            color: var(--whiteColor);
+                
+                            &:hover {
+                                font-size: 21px;
+                            }
+                        }
+                
+                    }
+
+                    }
+
+
+
+
+                 }
+
+
+
+        }
+    }
+
+}

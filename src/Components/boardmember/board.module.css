@@ -1,0 +1,104 @@
+/* Upper Section */
+.upper {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    color: gray;
+  }
+  
+  .bottom {
+    height: auto;
+    padding: 60px 70px;
+  }
+  
+  .title {
+    font-size: 45px;
+  }
+  
+  /* Image Background Container */
+  .imagebackgroudcontainer {
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .imagebackgroudcontainer .image {
+    border-radius: 5px;
+    max-width: 1500px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Card Container */
+  .card {
+    margin: 30px;
+    flex-direction: row;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+  }
+  
+  /* Person Card */
+  .personCard {
+    border-radius: 1rem;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .personCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .personImage {
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .personImage:hover {
+    transform: scale(1.1);
+  }
+  
+  .title {
+    color: rgba(0, 0, 0, 0.735);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  
+  .position {
+    font-size: 20px;
+    color: #8d6623;
+    transition: color 0.3s;
+  }
+  
+  .position:hover {
+    color: #b3742b;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

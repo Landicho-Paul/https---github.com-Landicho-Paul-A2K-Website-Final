@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+
+:root {
+    --PrimaryColor: hsla(26, 93%, 50%);
+    --HoverColor: hsla(26, 90%, 42%);
+    --whiteColor: hsla(0, 0%, 100%);
+    --blackColor: hsla(0, 0%, 18%);
+    --textColor: hsla(240, 1%, 48%);
+    --whiteColorDeam: hsla(0, 0%, 93%);
+    --greyBg: hsla(0, 0%, 96%);
+    --inputColor: hsla(330, 12%, 97%);
+    --greyText: rgb(190, 190, 190);
+    --SecondaryColor: hsl(204, 33%, 97%);
+    --MainColor: hsl(20, 4%, 13%);
+    --ThirdColor: hsl(214, 10%, 34%);
+    --OnHoverColor: hsl(210, 10%, 14%);
+    --ButtonHover: hsl(210, 17%, 98%);
+}
+
+.footer {
+    background: var(--greyBg);
+    padding: 2rem 0;
+
+    .secContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        text-align: left;
+        padding: 0 8rem;
+
+        .footerLogo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                    height: 80px;
+                    width: 180px;
+                }
+
+                .angad {
+                    margin-top: 0.3rem;
+                    font-size: 10px;
+                    font-weight: 600;
+                    color: var(--blackColor);
+                }
+            }
+
+            .slogan {
+                margin-top: 0.5rem;
+                font-size: 14px;
+                color: var(--MainColor);
+            }
+        }
+
+        .footerLinks,
+        .footerSocial,
+        .footerSubscription {
+            display: flex;
+            flex-direction: column;
+
+            .linkTitle {
+                font-size: 23px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                color: var(--blackColor);
+            }
+
+            li {
+                list-style: none;
+                margin-bottom: 0.5rem;
+
+                a {
+                    color: var(--textColor);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--blackColor);
+                    }
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: 1rem;
+
+                .icon {
+                    font-size: 38px;
+                    color: var(--blackColor);
+
+                    &:hover {
+                        color: var(--textColor);
+                        border-radius: 50%;
+                        background: var(--greyText);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            p {
+                color: var(--textColor);
+                font-size: 14px;
+                
+            }
+            p.bot{
+                margin-bottom: 1rem;
+            }
+
+            .subscribeButton {
+                width: 200px;
+                height: 50px;
+                background: var(--blackColor);
+                color: var(--whiteColor);
+                border-radius: 10px;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                font-size: 14px;
+
+                &:hover {
+                    background: var(--greyBg);
+                    color: var(--blackColor);
+                    border: 1px solid var(--blackColor);
+                }
+            }
+        }
+    }
+}

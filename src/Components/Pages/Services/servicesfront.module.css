@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Colors */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+:root {
+  --PrimaryColor: hsla(26, 93%, 50%);
+  --HoverColor: hsla(26, 90%, 42%);
+  --whiteColor: hsla(0, 0%, 100%);
+  --blackColor: hsla(0, 0%, 18%);
+  --textColor: hsla(240, 1%, 48%);
+  --whiteColorDeam: hsla(0, 0%, 93%);
+  --greyBg: hsla(0, 0%, 96%);
+  --inputColor: hsla(330, 12%, 97%);
+  --greyText: rgb(190, 190, 190);
+  --SecondaryColor: hsl(204, 33%, 97%);
+  /*Primary*/
+  --MainColor: hsl(20, 4%, 13%);
+  /* section*/
+  --ThirdColor: hsl(214, 10%, 34%);
+  /* color in logo */
+  --OnHoverColor: hsl(210, 10%, 14%);
+  /* hover color */
+  --ButtonHover: hsl(210, 17%, 98%);
+  /* button in home */
+  --GoldColor: hsl(38, 36%, 51%);
+}
+
+.popular {
+  padding-top: 2rem;
+}
+
+.secContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContent {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  /* Centering the content */
+}
+.mainContent .leftIcon {
+  cursor: pointer;
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.mainContent .leftIcon:hover {
+  background: var(--greyText);
+  color: var(--blackColor);
+}
+.mainContent .icon {
+  cursor: pointer;
+  padding: 0.5rem;
+  background: var(--greyText);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.mainContent .icon:hover {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.mainContent .carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-top: 1rem;
+  justify-content: center;
+  /* Centering the carousel */
+}
+.mainContent .carousel .transfServices {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  width: 270px;
+  margin: 0 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
+  background: var(--greyBg);
+  height: 310px;
+  transition: transform 0.5s ease;
+}
+.mainContent .carousel .transfServices .servicesImage {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.mainContent .carousel .transfServices .servicesImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mainContent .carousel .transfServices .servicesFooter {
+  padding: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.mainContent .carousel .transfServices .servicesFooter .servicesText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .carousel .transfServices .servicesFooter .servicesText h6 {
+  color: var(--blackColor);
+  font-size: 18px;
+}
+.mainContent .carousel .transfServices .servicesFooter .servicesText .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContent .carousel .transfServices .servicesFooter .servicesText .dot .icon {
+  color: var(--blackColor);
+  font-size: 30px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.mainContent .carousel .transfServices .servicesFooter .servicesText .dot .icon:hover {
+  transform: scale(1.2);
+  color: var(--whiteColor);
+  background: var(--GoldColor);
+}
+
+.secHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.secHeader .textDiv .secTitle {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.secHeader .textDiv .secTitle .a2k {
+  color: var(--GoldColor);
+  font-weight: 600;
+}
+.secHeader .textDiv h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.secHeader .textDiv p {
+  font-size: 20px;
+  color: var(--textColor);
+  font-weight: 500;
+  text-align: center;
+}/*# sourceMappingURL=servicesfront.module.css.map */

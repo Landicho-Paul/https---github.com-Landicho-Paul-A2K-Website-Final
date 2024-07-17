@@ -1,0 +1,119 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.hehe {
+  padding-top: 10vh;
+}
+
+.upper {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  color: gray;
+}
+.title{
+  font-size: 45px;
+}
+.bottom {
+  height: auto;
+  padding: 60px 70px;
+}
+
+/* Container Styles */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 40px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Card Styles */
+.newsCard {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.newsCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.newsImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.newsContent {
+  padding: 20px;
+}
+
+.newsTitle {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+  height: 80px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.newsDescription {
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+  margin: 10px 0;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.newsFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsDate {
+  font-size: 12px;
+  color: #999999;
+}
+
+.newsLink {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.newsLink:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

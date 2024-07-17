@@ -1,0 +1,248 @@
+:root {
+    --secondaryWhite: #fffaf1;
+    --white: #ffffff;
+    --primaryBlack: #212121;
+    --primaryGold: #8d6623;
+    --primaryGrey: #a2a29e;
+	--secondaryGold: #af8e54;
+  }
+.sideContainerinAdminAccount{
+
+    border-radius: 5px;
+    background-color: var(--secondaryWhite);
+    height: 88vh;
+    margin-right:7px ;
+    margin-left: 3px;
+    box-shadow: 0px 37px 48px 7px rgba(0,0,0,0.28);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll; 
+    /* justify-content: center; */
+    width: 85vw;
+    position: relative;
+}
+.UpperContainer{
+    
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.upper1{
+    width: 35%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex: wrap;
+}
+.upper1 p{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #626262;
+}
+.upper2{
+    width: 45%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+button{
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.upper1 button{
+    transition: all 0.5s ease-in-out;
+    background-color: var(--primaryGold);
+    font-weight: bolder;
+    color: var(--secondaryWhite);
+}
+
+.upper2 button{
+    background-color: var(--secondaryWhite);
+    font-weight: bolder;
+    color: var(--primaryGold);
+    border: 1px solid var(--primaryGold);
+}
+
+.upper1 button:hover{
+    transition: all 0.5s ease-in-out;
+    scale: 1.1;
+    background-color: var(--primaryGold);
+    font-weight: bolder;
+    color: var(--secondaryWhite);
+}
+
+.upper2 button:hover{
+    transition: all 0.5s ease-in-out;
+    scale: 1.1;
+    background-color: var(--secondaryWhite);
+    font-weight: bolder;
+    color: var(--primaryGold);
+    border: 2px solid var(--primaryGold);
+}
+.search{
+    display: flex;
+    background-color: transparent;
+    height: 40px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border: 1px solid grey;
+    border-radius:5px ;
+    
+    
+
+}
+.search input{
+    height: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--primaryGold);
+}
+.search input:focus,
+.search input:valid {
+    border: 1px solid var(--secondaryWhite);
+    
+}
+.search input:focus-visible{
+    color: var(--primaryGold);
+    
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 10px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.15);
+    overflow-y:auto;
+    overflow-x:auto;
+    height:600px;
+    display:block;
+    border-bottom: 2px solid var(--primaryGrey);
+    transition: all 0.5s ease-in-out;
+    
+}
+.content-table thead tr{
+    background-color: var(--primaryGrey);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid white;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.LowerContainer{
+    
+    background-color: transparent;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    top: 200px;
+    /* overflow: scroll; */
+
+    
+
+}
+
+.buttonInTable{
+    background-color: rgba(0, 255, 136, 0.181); /* semi-transparent red background */
+    color: rgb(1, 49, 15); /* fully opaque black text */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.buttonInTableReject{
+    background-color: rgba(255, 119, 0, 0.181); /* semi-transparent red background */
+    color: rgb(136, 76, 3); /* fully opaque black text */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 1450px) {
+    .sideContainerinAdminAccount{
+
+
+        width: 90.4vw;
+    }
+
+}
+
+@media screen and (max-width: 1590px) {
+    .sideContainerinAdminAccount{
+
+
+        width: 91.4vw;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .sideContainerinAdminAccount{
+
+
+        width: 81.4vw;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .upper1{
+        margin: 20px;
+        flex-direction: column;
+    }
+    .upper2{
+        margin: 20px;
+        flex-direction: column;
+    }
+    .UpperContainer{
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+    }
+    .content-table{
+        
+        height:400px;
+        
+        
+    }
+  }
+
+
+
+

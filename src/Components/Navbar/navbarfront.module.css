@@ -1,0 +1,215 @@
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+:root {
+  --PrimaryColor: hsla(26, 93%, 50%);
+  --HoverColor: hsla(26, 90%, 42%);
+  --whiteColor: hsla(0, 0%, 100%);
+  --blackColor: hsla(0, 0%, 18%);
+  --textColor: hsla(240, 1%, 48%);
+  --whiteColorDeam: hsla(0, 0%, 93%);
+  --greyBg: hsla(0, 0%, 96%);
+  --inputColor: hsla(330, 12%, 97%);
+  --greyText: rgb(190, 190, 190);
+  --SecondaryColor: hsl(204, 33%, 97%);
+  --MainColor: hsl(20, 4%, 13%);
+  --ThirdColor: hsl(214, 10%, 34%);
+  --OnHoverColor: hsl(210, 10%, 14%);
+  --ButtonHover: hsl(210, 17%, 98%);
+  --GoldColor: hsl(38, 36%, 51%);
+  --MoreGoldColor: hsl(38, 59%, 48%);
+}
+
+.navBarSection .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--SecondaryColor);
+  width: 100%;
+  height: 100px;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.navBarSection .header .logoDiv .logo {
+  color: var(--blackColor);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+  width: 110px;
+  text-decoration: none;
+}
+.navBarSection .header .logoDiv .logo .angad {
+  margin-top: 0.3rem;
+  font-size: 7px;
+  font-weight: 600;
+  color: black;
+}
+.navBarSection .header .navBar {
+  display: flex;
+  align-items: center;
+}
+.navBarSection .header .navBar .navLists {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navBarSection .header .navBar .navLists .navItem {
+  position: relative;
+  margin: 0 1.5rem;
+}
+.navBarSection .header .navBar .navLists .navItem .navLink {
+  color: var(--blackColor);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.navBarSection .header .navBar .navLists .navItem .navLink:hover {
+  color: var(--GoldColor);
+}
+.navBarSection .header .navBar .navLists .navItem .activeLink {
+  color: var(--GoldColor) !important;
+}
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--SecondaryColor);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  padding-top: 5px;
+  margin: 0;
+  border-radius: 10px;
+  z-index: 1001;
+}
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu li {
+  padding: 0.5rem 1rem;
+}
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu li a {
+  color: var(--blackColor);
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu li a:hover {
+  color: var(--GoldColor);
+}
+@media screen and (min-width: 981px) {
+  .navBarSection .header .navBar .navLists .navItem:hover .dropdownMenu {
+    display: block;
+  }
+}
+.navBarSection .header .navBar .navLists .navItem.show .dropdownMenu {
+  display: block;
+}
+.navBarSection .header .navBar .headerBtns {
+  display: flex;
+  align-items: center;
+}
+.navBarSection .header .navBar .headerBtns .iconsoc {
+  margin: 0.5rem;
+  font-size: 20px;
+  color: var(--blackColor);
+  cursor: pointer;
+}
+.navBarSection .header .navBar .headerBtns .iconsoc:hover {
+  color: var(--GoldColor);
+}
+.navBarSection .header .toggleNavbar {
+  display: none;
+}
+.navBarSection .header .toggleNavbar .icon {
+  margin-right: 3rem;
+  font-size: 25px;
+  color: var(--blackColor);
+  cursor: pointer;
+}
+.navBarSection .header .toggleNavbar .icon:hover {
+  color: var(--textColor);
+}
+@media screen and (max-width: 980px) {
+  .navBarSection .header .navBar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: var(--SecondaryColor);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+    transition: top 0.7s ease;
+    z-index: 999;
+  }
+  .navBarSection .header .navBar.activeNavbar {
+    top: 100px;
+  }
+  .navBarSection .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .navBarSection .header .navBar .navLists .navItem {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink {
+    color: var(--blackColor);
+    font-size: 0.9rem;
+    font-weight: 450;
+  }
+  .navBarSection .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--textColor);
+  }
+  .navBarSection .header .navBar .navLists .navItem .dropdownMenu {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    width: 100%;
+    background: var(--SecondaryColor);
+  }
+  .navBarSection .header .navBar .navLists .navItem .dropdownMenu li {
+    padding: 0.5rem 1rem;
+  }
+  .navBarSection .header .navBar .navLists .navItem .dropdownMenu li a {
+    font-size: 0.9rem;
+  }
+  .navBarSection .header .navBar .navLists .navItem.show .dropdownMenu {
+    display: block;
+  }
+  .navBarSection .header .navBar .headerBtns {
+    flex-direction: row;
+  }
+  .navBarSection .header .navBar .headerBtns .iconsoc {
+    margin: 0.8rem;
+    font-size: 20px;
+    color: var(--blackColor);
+    cursor: pointer;
+  }
+  .navBarSection .header .navBar .headerBtns .iconsoc:hover {
+    color: var(--textColor);
+  }
+  .navBarSection .header .toggleNavbar {
+    display: block;
+  }
+}
+.navBarSection .activeHeader {
+  background: var(--SecondaryColor);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
+}/*# sourceMappingURL=navbarfront.module.css.map */

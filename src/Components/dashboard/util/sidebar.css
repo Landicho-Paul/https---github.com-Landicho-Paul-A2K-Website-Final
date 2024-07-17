@@ -1,0 +1,116 @@
+:root {
+  --secondaryWhite: #fffaf1;
+  --white: #ffffff;
+  --primaryBlack: #232120;
+  --primaryGold: #8d6623;
+  --primaryGrey: #6b6b68;
+  --secondaryGold: #af8e54;
+  --mainGrey: #636363;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  box-sizing: border-box;
+}
+
+ul li .links {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  max-width: 250px;
+  min-width: 101px;
+  height: 88vh;
+  padding: 0 1.7rem;
+  color: var(--white);
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: var(--mainGrey);
+  margin: 5px;
+  margin-top: 0;
+  border-radius: 5px;
+  position: sticky;
+  box-shadow: -56px -68px 96px -85px rgba(99, 99, 99, 0.17) inset;
+}
+.links {
+  color: var(--white);
+}
+.menu {
+  height: 88%;
+  padding: 0;
+  padding-top: 50px;
+}
+.menu li .links {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  gap: 2.57rem;
+  text-decoration: none;
+}
+
+.menu li .links:hover {
+  scale: 1.1;
+  background-color: var(--primaryGrey);
+  box-shadow: -16px -20px 84px -6px rgba(0, 0, 0, 0.23) inset;
+  color: #fffaf1;
+}
+
+.log {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+}
+.log .links {
+  justify-content: center;
+}
+
+.logouticon {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.try .active {
+  color: white;
+  transition: all 1.5s ease-in-out;
+  scale: 1.1;
+  background-color: gray;
+}
+@media screen and (max-width: 1590px) {
+  .sidebar {
+    transition: all 0.5s ease-in-out;
+    width: 101px;
+  }
+  .logouticon {
+    display: block;
+    opacity: 1;
+  }
+  .logoutext {
+    display: none;
+  }
+}
+
+.profilesetting{
+  color: #232120;
+  background-color: transparent;
+  text-decoration: none;
+}
+.profilesetting:hover{
+  scale: 1.2;
+  color: var(--primaryGold);
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 1ms ease-in-out;
+}

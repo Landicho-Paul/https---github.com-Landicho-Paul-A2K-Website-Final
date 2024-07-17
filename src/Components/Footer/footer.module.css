@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+:root {
+  --PrimaryColor: hsla(26, 93%, 50%);
+  --HoverColor: hsla(26, 90%, 42%);
+  --whiteColor: hsla(0, 0%, 100%);
+  --blackColor: hsla(0, 0%, 18%);
+  --textColor: hsla(240, 1%, 48%);
+  --whiteColorDeam: hsla(0, 0%, 93%);
+  --greyBg: hsla(0, 0%, 96%);
+  --inputColor: hsla(330, 12%, 97%);
+  --greyText: rgb(190, 190, 190);
+  --SecondaryColor: hsl(204, 33%, 97%);
+  --MainColor: hsl(20, 4%, 13%);
+  --ThirdColor: hsl(214, 10%, 34%);
+  --OnHoverColor: hsl(210, 10%, 14%);
+  --ButtonHover: hsl(210, 17%, 98%);
+}
+
+.footer {
+  background: var(--greyBg);
+  padding: 2rem 0;
+}
+.footer .secContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  text-align: left;
+  padding: 0 8rem;
+}
+.footer .secContainer .footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer .secContainer .footerLogo .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.footer .secContainer .footerLogo .logo img {
+  height: 80px;
+  width: 180px;
+}
+.footer .secContainer .footerLogo .logo .angad {
+  margin-top: 0.3rem;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--blackColor);
+}
+.footer .secContainer .footerLogo .slogan {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: var(--MainColor);
+}
+.footer .secContainer .footerLinks,
+.footer .secContainer .footerSocial,
+.footer .secContainer .footerSubscription {
+  display: flex;
+  flex-direction: column;
+}
+.footer .secContainer .footerLinks .linkTitle,
+.footer .secContainer .footerSocial .linkTitle,
+.footer .secContainer .footerSubscription .linkTitle {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--blackColor);
+}
+.footer .secContainer .footerLinks li,
+.footer .secContainer .footerSocial li,
+.footer .secContainer .footerSubscription li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+.footer .secContainer .footerLinks li a,
+.footer .secContainer .footerSocial li a,
+.footer .secContainer .footerSubscription li a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+.footer .secContainer .footerLinks li a:hover,
+.footer .secContainer .footerSocial li a:hover,
+.footer .secContainer .footerSubscription li a:hover {
+  color: var(--blackColor);
+}
+.footer .secContainer .footerLinks .socials,
+.footer .secContainer .footerSocial .socials,
+.footer .secContainer .footerSubscription .socials {
+  display: flex;
+  gap: 1rem;
+}
+.footer .secContainer .footerLinks .socials .icon,
+.footer .secContainer .footerSocial .socials .icon,
+.footer .secContainer .footerSubscription .socials .icon {
+  font-size: 38px;
+  color: var(--blackColor);
+}
+.footer .secContainer .footerLinks .socials .icon:hover,
+.footer .secContainer .footerSocial .socials .icon:hover,
+.footer .secContainer .footerSubscription .socials .icon:hover {
+  color: var(--textColor);
+  border-radius: 50%;
+  background: var(--greyText);
+  cursor: pointer;
+}
+.footer .secContainer .footerLinks p,
+.footer .secContainer .footerSocial p,
+.footer .secContainer .footerSubscription p {
+  color: var(--textColor);
+  font-size: 14px;
+}
+.footer .secContainer .footerLinks p.bot,
+.footer .secContainer .footerSocial p.bot,
+.footer .secContainer .footerSubscription p.bot {
+  margin-bottom: 1rem;
+}
+.footer .secContainer .footerLinks .subscribeButton,
+.footer .secContainer .footerSocial .subscribeButton,
+.footer .secContainer .footerSubscription .subscribeButton {
+  width: 200px;
+  height: 50px;
+  background: var(--blackColor);
+  color: var(--whiteColor);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer .secContainer .footerLinks .subscribeButton:hover,
+.footer .secContainer .footerSocial .subscribeButton:hover,
+.footer .secContainer .footerSubscription .subscribeButton:hover {
+  background: var(--greyBg);
+  color: var(--blackColor);
+  border: 1px solid var(--blackColor);
+}/*# sourceMappingURL=footer.module.css.map */

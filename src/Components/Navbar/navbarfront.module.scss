@@ -1,0 +1,259 @@
+/* Colors */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+
+:root {
+    --PrimaryColor: hsla(26, 93%, 50%);
+    --HoverColor: hsla(26, 90%, 42%);
+    --whiteColor: hsla(0, 0%, 100%);
+    --blackColor: hsla(0, 0%, 18%);
+    --textColor: hsla(240, 1%, 48%);
+    --whiteColorDeam: hsla(0, 0%, 93%);
+    --greyBg: hsla(0, 0%, 96%);
+    --inputColor: hsla(330, 12%, 97%);
+    --greyText: rgb(190, 190, 190);
+    --SecondaryColor: hsl(204, 33%, 97%);
+    --MainColor: hsl(20, 4%, 13%);
+    --ThirdColor: hsl(214, 10%, 34%);
+    --OnHoverColor: hsl(210, 10%, 14%);
+    --ButtonHover: hsl(210, 17%, 98%);
+    --GoldColor: hsl(38, 36%, 51%);
+    --MoreGoldColor: hsl(38, 59%, 48%);
+}
+
+.navBarSection {
+    .header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--SecondaryColor);
+        width: 100%;
+        height: 100px;
+        padding: 1rem 2rem;
+        z-index: 1000;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        .logoDiv {
+            .logo {
+                color: var(--blackColor);
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 50px;
+                width: 110px;
+                text-decoration: none;
+
+                .angad {
+                    margin-top: 0.3rem;
+                    font-size: 7px;
+                    font-weight: 600;
+                    color: black;
+                }
+            }
+        }
+
+        .navBar {
+            display: flex;
+            align-items: center;
+
+            .navLists {
+                display: flex;
+                align-items: center;
+                list-style: none;
+
+                .navItem {
+                    position: relative;
+                    margin: 0 1.5rem;
+
+                    .navLink {
+                        color: var(--blackColor);
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: var(--GoldColor);
+                        }
+                    }
+
+                    .activeLink {
+                        color: var(--GoldColor) !important;
+                    }
+
+                    // Dropdown menu styles
+                    .dropdownMenu {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background: var(--SecondaryColor);
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        list-style: none;
+                        padding: 0;
+                        padding-top: 5px;
+                        margin: 0;
+                        border-radius: 10px;
+                        z-index: 1001;
+
+                        li {
+                            padding: 0.5rem 1rem;
+
+                            a {
+                                color: var(--blackColor);
+                                text-decoration: none;
+                                font-size: 1rem;
+
+                                &:hover {
+                                    color: var(--GoldColor);
+                                }
+                            }
+                        }
+                    }
+
+                    // Display dropdown on hover for larger screens
+                    @media screen and (min-width: 981px) {
+                        &:hover .dropdownMenu {
+                            display: block;
+                        }
+                    }
+
+                    // Show dropdown on click for smaller screens
+                    &.show .dropdownMenu {
+                        display: block;
+                    }
+                }
+            }
+
+            .headerBtns {
+                display: flex;
+                align-items: center;
+
+                .iconsoc {
+                    margin: 0.5rem;
+                    font-size: 20px;
+                    color: var(--blackColor);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--GoldColor);
+                    }
+                }
+            }
+        }
+
+        .toggleNavbar {
+            display: none;
+
+            .icon {
+                margin-right: 3rem;
+                font-size: 25px;
+                color: var(--blackColor);
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--textColor);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .header {
+            .navBar {
+                position: fixed;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                background: var(--SecondaryColor);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+                box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+                transition: top 0.7s ease;
+                z-index: 999;
+
+                &.activeNavbar {
+                    top: 100px;
+                }
+
+                .navLists {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
+                    .navItem {
+                        width: 100%;
+                        text-align: center;
+                        margin: 1rem 0;
+
+                        .navLink {
+                            color: var(--blackColor);
+                            font-size: 0.9rem;
+                            font-weight: 450;
+
+                            &:hover {
+                                color: var(--textColor);
+                            }
+                        }
+
+                        .dropdownMenu {
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            display: none;
+                            width: 100%;
+                            background: var(--SecondaryColor);
+
+                            li {
+                                padding: 0.5rem 1rem;
+
+                                a {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+
+                        &.show .dropdownMenu {
+                            display: block;
+                        }
+                    }
+                }
+
+                .headerBtns {
+                    flex-direction: row;
+
+                    .iconsoc {
+                        margin: 0.8rem;
+                        font-size: 20px;
+                        color: var(--blackColor);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--textColor);
+                        }
+                    }
+                }
+            }
+
+            .toggleNavbar {
+                display: block;
+            }
+        }
+    }
+
+    .activeHeader {
+        background: var(--SecondaryColor);
+        box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
+    }
+}

@@ -1,0 +1,188 @@
+h1 {
+  display: flex;
+}
+.h1div {
+  height: 20vh;
+
+  margin-left: 20px;
+  background-color: blue;
+}
+.down {
+  height: 110vh;
+  background-color: pink;
+}
+
+.upper {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(58, 55, 55);
+}
+.lower {
+  transition: all 0.5s ease-in-out;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #41414149;
+  padding-bottom: 90px;
+}
+
+.wallpaper {
+  height: 50vh;
+}
+
+.wallpaperSentence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.CreateinWallpaper {
+  padding: 20px;
+}
+#buttonupdate {
+  background-color: rgba(0, 156, 0, 0.698);
+}
+.box {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  padding: 20px;
+  font-weight: bolder;
+}
+.textareainput {
+  background-color: rgba(203, 203, 203, 0.319);
+
+  border-radius: 5px;
+  height: 50px;
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+.buttoninMain {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  background-color: #0d6efd;
+  width: 90px;
+}
+.h1Main {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.wallpaperimage {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  box-shadow: 37px 16px 151px -54px rgba(0, 0, 0, 0.75) inset;
+}
+.wallpaperimage2 {
+  height: 130px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.picturecontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 30px;
+  align-items: center;
+}
+.picturecontainer:hover {
+  box-shadow: -3px 7px 227px -13px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s ease-in-out;
+  scale: 1.05;
+  padding: 10px;
+}
+.buttondelete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f44336;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.buttondelete:hover {
+  background-color: #dc3546ae;
+}
+.buttonupdate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 156, 0);;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .buttonupdate:hover {
+    background-color: rgba(0, 156, 0, 0.55);;
+  }
+.Specializeinput {
+  background-color: rgba(203, 203, 203, 0.857);
+
+  border-radius: 5px;
+  height: 50px;
+  resize: vertical;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.SpecializedInput {
+  height: 50px;
+  width: 100%;
+  max-width: 270px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.SpecializedInput .inputs {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192, 192, 192, 0.253);
+  border: 2px solid #a7a7a749;
+}
+.Specialbutton{
+    display: flex;
+    
+}
+/* .buttondelete1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 0, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 10px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.buttondelete1:hover{
+    background-color: #dc3546ae;
+    
+
+} */

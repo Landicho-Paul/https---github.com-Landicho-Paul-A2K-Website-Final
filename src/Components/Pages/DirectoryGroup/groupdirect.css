@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+body {
+  background: white;
+}
+
+.directorytable {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.directorytable h1 {
+  display: grid;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.directorytable table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+.directorytable table th,
+.directorytable table td {
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: middle;
+}
+.directorytable table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+.directorytable table .category {
+  font-weight: bold;
+  background-color: #e8effa;
+}
+.directorytable table tr.general td {
+  background-color: #dce7ff;
+}
+.directorytable table tr.groups:nth-child(odd) td {
+  background-color: #fff7da;
+}
+.directorytable table tr.groups:nth-child(even) td {
+  background-color: #fff2cc;
+}
+.directorytable table tr.divisions:nth-child(odd) td {
+  background-color: #eaf5f1;
+}
+.directorytable table tr.divisions:nth-child(even) td {
+  background-color: #d2e8e1;
+}
+.directorytable table .division-title {
+  font-weight: bold;
+  background-color: #bcd4cb;
+}
+.directorytable table tr:hover {
+  background-color: #f1f1f1;
+}/*# sourceMappingURL=groupdirect.css.map */

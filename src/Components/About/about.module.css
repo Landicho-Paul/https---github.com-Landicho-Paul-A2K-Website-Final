@@ -1,0 +1,124 @@
+:root {
+  --PrimaryColor: hsla(26, 93%, 50%);
+  --HoverColor: hsla(26, 90%, 42%);
+  --whiteColor: hsla(0, 0%, 100%);
+  --blackColor: hsla(0, 0%, 18%);
+  --textColor: hsla(240, 1%, 48%);
+  --whiteColorDeam: hsla(0, 0%, 93%);
+  --greyBg: hsla(0, 0%, 96%);
+  --inputColor: hsla(330, 12%, 97%);
+  --greyText: rgb(190, 190, 190);
+  --SecondaryColor: hsl(204, 33%, 97%);
+  --MainColor: hsl(20, 4%, 13%);
+  --ThirdColor: hsl(214, 10%, 34%);
+  --OnHoverColor: hsl(210, 10%, 14%);
+  --ButtonHover: hsl(210, 17%, 98%);
+  --GoldColor: hsl(38, 36%, 51%);
+}
+
+.aboutCssAbout .aboutCssSecContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssTitle {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent .aboutCssSingleItem {
+  text-align: center;
+  margin: 1rem;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent .aboutCssSingleItem img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent .aboutCssSingleItem p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url("../../Assets/bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText {
+  flex: 1;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText h2 {
+  color: var(--GoldColor);
+  font-weight: 600;
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText h2 .aboutCssWelcome {
+  font-weight: 400;
+  color: var(--whiteColor);
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText p {
+  text-align: center;
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardVideo {
+  flex: 0 0 550px;
+  border: 2px solid var(--whiteColor);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardVideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .aboutCssAbout .aboutCssSecContainer .aboutCssMainContent {
+    flex-direction: column;
+  }
+  .aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 3rem;
+  }
+  .aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText h2 {
+    font-size: 4rem;
+  }
+  .aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardVideo {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=about.module.css.map */

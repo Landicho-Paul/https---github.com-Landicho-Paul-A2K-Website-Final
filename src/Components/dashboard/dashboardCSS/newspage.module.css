@@ -1,0 +1,11 @@
+.contentTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-height: 400px;
+}
+.image{
+    height: 50px;
+    width: 60px;
+    object-fit: cover;
+}

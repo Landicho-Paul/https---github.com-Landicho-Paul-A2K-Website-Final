@@ -1,0 +1,27 @@
+.navbar{
+    background-color: transparent;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+    position: fixed;
+
+}
+.navbar_link{
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.link{
+    color: rgb(48, 48, 48);
+    font-weight: bolder;
+}
+

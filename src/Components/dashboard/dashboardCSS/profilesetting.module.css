@@ -1,0 +1,153 @@
+:root {
+    --secondaryWhite: #fffaf1;
+    --white: #ffffff;
+    --primaryBlack: #232120;
+    --secondaryBlack: #242423;
+    --primaryGold: #8d6623;
+    --primaryGrey: #9b9b9b;
+    --secondaeyGrey: #dcdcdc;
+  }
+
+.uppercontainer{
+    height: 40%;
+    background-color: var(--secondaryWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lowercontainer{
+    height: 60%;
+    background-color: var(--secondaryWhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--secondaeyGrey);
+}
+.UpperLeft{
+    background-color: var(--secondaryWhite);
+    display: flex;
+    align-items: center;
+}
+.UpperRigth{
+    background-color: var(--secondaryWhite);
+    display: flex;
+    align-items: center;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    
+    width: 450px;
+}
+
+.inputContainer input{
+    margin:10px 0 ;
+    height: 35px;
+    width: 100%;
+    
+    border: 2px solid var(--secondaeyGrey);
+    padding-left: 15px;
+    color: var(--primaryGrey);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.uppercontainer label{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(77, 77, 77);
+    margin-top: 20px;
+}
+.lowercontainer label{
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(78, 78, 78);
+    margin-top: 20px;
+}
+.inputProfileContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+    width: 100%;
+}
+.inputProfileContainer label{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #0f0f0f;
+    
+}
+
+ .profiles{
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: var(--secondaryWhite);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 35px;
+    border: 2px solid var(--secondaeyGrey);
+}
+.Profilesavebutton{
+    height: 40px;
+    width: 115px;
+    font-size: 12px;
+    color: var(--secondaryWhite);
+    background-color: var(--primaryGold);
+}
+
+.Profilesavebutton:hover{
+    scale: 1.04;
+    color: var(--primaryGold);
+    background-color: #ffedca;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--primaryGold);
+    cursor: pointer;
+}
+
+.buttoncontainer button{
+    margin: 20px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.fullname{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.buttonupdate{
+    height: 40px;
+    width: 115px;
+    font-size: 12px;
+    color: var(--secondaryWhite);
+    background-color: var(--primaryGold);
+    margin-top: 20px;
+}
+.buttonupdate:hover{
+    scale: 1.04;
+    color: var(--primaryGold);
+    background-color: #ffedca;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid var(--primaryGold);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+

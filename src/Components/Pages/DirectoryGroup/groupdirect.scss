@@ -1,0 +1,84 @@
+// src/GroupDirect.scss
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s ease;
+}
+
+body{
+    background: white;
+}
+
+.directorytable {
+    
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        display: grid;
+        justify-content: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #f9f9f9; // Add a background color to the table
+        border: 1px solid #ddd;
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .category {
+            font-weight: bold;
+            background-color: #e8effa; // Light blue for category
+        }
+
+        tr.general td {
+            background-color: #dce7ff; // Light blue for general rows
+        }
+
+        tr.groups:nth-child(odd) td {
+            background-color: #fff7da; // Light yellow for odd group rows
+        }
+
+        tr.groups:nth-child(even) td {
+            background-color: #fff2cc; // Slightly darker yellow for even group rows
+        }
+
+        tr.divisions:nth-child(odd) td {
+            background-color: #eaf5f1; // Light green for odd division rows
+        }
+
+        tr.divisions:nth-child(even) td {
+            background-color: #d2e8e1; // Slightly darker green for even division rows
+        }
+
+        .division-title {
+            font-weight: bold;
+            background-color: #bcd4cb; // Darker green for division titles
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; // Highlight on hover
+        }
+    }
+}

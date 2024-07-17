@@ -1,0 +1,50 @@
+:root {
+    --secondaryWhite: #fffaf1;
+    --white: #ffffff;
+    --primaryBlack: #232120;
+    --primaryGold: #8d6623;
+    --primaryGrey: #6b6b6b;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 115px;
+    box-shadow: 1px 1px 212px -4px rgba(0,0,0,0.42);
+    background-color: var(--secondaryWhite);
+    margin: 7px;
+    border-radius: 10px;
+    
+    
+
+}
+.title p{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--primaryBlack);
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbarlogo img{
+    height: 50px;
+}
+.profilenav p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 787px){
+    .title{
+        opacity: 0;
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+}

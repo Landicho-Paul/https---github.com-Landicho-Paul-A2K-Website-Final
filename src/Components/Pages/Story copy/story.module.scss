@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Colors */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+
+/* Default Styling*/
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.section {
+    padding: 1rem 0 1rem;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: .4rem 1.5rem;
+    background: var(--blackColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+
+}
+
+.btn:hover a {
+    color: var(--whiteColor);
+}
+
+.secIntro {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.secIntro .secTitile {
+    color: var(--blackColor);
+    line-height: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.secIntro p {
+    font-size: 13px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    font-size: 100%;
+}
+:root {
+    --PrimaryColor: hsla(26, 93%, 50%);
+    --HoverColor: hsla(26, 90%, 42%);
+    --whiteColor: hsla(0, 0%, 100%);
+    --blackColor: hsla(0, 0%, 18%);
+    --textColor: hsla(240, 1%, 48%);
+    --whiteColorDeam: hsla(0, 0%, 93%);
+    --greyBg: hsla(0, 0%, 96%);
+    --inputColor: hsla(330, 12%, 97%);
+    --greyText: rgb(190, 190, 190);
+    //box-shadow: 0, 2px 8px 2px rgba(178, 178, 178, 0.45);
+
+    --SecondaryColor: hsl(204, 33%, 97%); //Primary
+    --MainColor: hsl(20, 4%, 13%); //section
+    --ThirdColor: hsl(214, 10%, 34%); //color in logo
+    --OnHoverColor: hsl(210, 10%, 14%); //Hover
+    --ButtonHover: hsl(210, 17%, 98%); //Button on HOme
+    --GoldColor: hsl(38, 36%, 51%);
+}
+
+.offer{
+    .secContainer{
+        .secIntroduce{
+            padding-bottom: 1rem;
+            .secTitle{
+                color: var(--GoldColor);
+                text-align: center;
+                font-size: 35px;
+                font-weight: 600;
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 20px;
+                color: var(--textColor);
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+
+
+
+        .mainContent{
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+
+            .singleNews{
+                
+                width: 340px;
+                border-radius: 1rem;
+                overflow: hidden;
+                padding: .5rem;
+                box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+                
+
+                .icon{
+                    font-size: 2opx;
+                    color: var(--textColor);
+                }
+
+                small{
+                    font-weight: 500;
+                    color: var(--textColor);
+                }
+
+                .newsImage{
+                    position: relative;
+                    height: 200px;
+                    width: 100%;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+
+                    img{
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    
+                }
+
+                .offerBody{
+                    padding: 1rem;
+                    background: var(--greyBg);
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    .price{
+                        justify-content: center;
+                        flex-direction: row;
+                        margin: 0.2rem;
+
+                        h4{
+                            color: var(--blackColor);
+                            font-weight: 700;
+                            font-style: 1.1rem;
+                            margin-left: 0.3rem;
+
+                        }
+
+                        .status{
+                            padding: 5px 10px;
+                            color: var(--HoverColor);
+                            background: var(--greyBg);
+                            font-style: 10px;
+                            font-weight: 600;
+                            border-radius: 3rem;
+
+                        }
+                    }
+
+                    .amenities{
+                        width: 100%;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        padding: 1rem 0;
+                        gap: .5rem;
+
+                        .singleAmenity{
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            background: var(--greyBg);
+                            gap: .5rem;
+                        }
+                    }
+
+                    .btn{
+                        margin-top: 1rem;
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                        padding: .6rem;
+                        color: var(--GoldColor);
+                        background: var(--whiteColor);
+                        border: 1px solid var(--blackColor);
+                        font-weight: 600;
+                        gap: 0.5rem;
+
+                        &:hover {
+                                background-color: var(--blackColor); // Change this to your desired hover background color
+                                color: var(--whiteColor);
+                        }
+
+                        .icon{
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+
+                &:hover{
+                    transform: translateY(-10px);
+                }
+            }
+        }
+
+    }
+}
