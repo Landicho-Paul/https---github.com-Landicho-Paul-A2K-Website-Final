@@ -52,11 +52,7 @@ function App() {
     </div>
   );
 
-  // return (
-  //   <>
-  //   <About/>
-  //   </>
-  // );
+
 }
 
 export default App;
